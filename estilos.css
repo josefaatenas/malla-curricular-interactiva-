@@ -1,1 +1,32 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #fafafa;
+}
 
+#malla {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(6, 100px);
+  gap: 5px;
+}
+
+.celda {
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.celda:hover {
+  background-color: #d0e6f7;
+}
+
+.celda.activa {
+  background-color: #85c1e9;
+  color: white;
+  font-weight: bold;
+}
